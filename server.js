@@ -21,7 +21,9 @@ app.post('/api/counter', (req, res) => {
 });
 
 // All remaining requests go to React
-app.get("*", (req, res) => {
+
+    app.get("/*", (req, res) => {
+
   res.sendFile(path.join(__dirname, "naamjaap", "dist", "index.html"));
 });
 
