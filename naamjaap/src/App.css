@@ -1,0 +1,91 @@
+body, html {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#002233, #00aaff);
+  color: white;
+  height: 100vh;
+  text-align: center;
+}
+
+.app {
+  padding-top: 40px;
+}
+
+.counter-circle {
+  border: 6px solid white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  font-size: 48px;
+  margin: 20px auto;
+}
+
+.stats div {
+  margin: 8px 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+.count-button, .stop-button, .reset-button {
+  font-size: 20px;
+  padding: 15px 25px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.count-button:hover, .stop-button:hover, .reset-button:hover {
+  background-color: #006666;
+}
+
+.modes {
+  margin: 10px 0;
+}
+
+.mala-log {
+  background: #ffffff22;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 12px;
+  width: 80%;
+  color: white;
+}
+
+.mala-log table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.mala-log th, .mala-log td {
+  padding: 10px;
+  border: 1px solid white;
+}
+
+@media (max-width: 600px) {
+  .counter-circle {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    line-height: 100px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .count-button, .stop-button, .reset-button {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
