@@ -33,3 +33,6 @@ app.use((req, res, next) => {
 //   res.sendFile(path.join(__dirname, 'naamjaap', 'dist', 'index.html'));
 // });
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
+//Live Link:    https://naam-jaap.onrender.com/
