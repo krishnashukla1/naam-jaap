@@ -28,5 +28,8 @@ app.post("/api/counter", (req, res) => {
 app.use((req, res, next) => {
   res.sendFile(path.join(frontendPath, "index.html"));
 });
-
+// ✅ Fallback for SPA (React)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'naamjaap', 'dist', 'index.html'));
+});
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
