@@ -15,8 +15,8 @@ app.post('/api/counter', (req, res) => {
   counterData = req.body;
   res.json({ success: true });
 });
-// Catch-all handler to serve index.html for React routing
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+// All remaining requests go to React
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, 'naamjaap', 'dist', 'index.html'));
 });
 app.listen(3001, () => console.log('Server started on port 3001'));
