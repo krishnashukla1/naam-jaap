@@ -8,12 +8,32 @@
 
 
 
-// client/vite.config.js
+// // client/vite.config.js
+// import { defineConfig } from 'vite';
+// import react from '@vitejs/plugin-react';
+
+// export default defineConfig({
+//     base: '/naamjaap/',
+//   plugins: [react()],
+//   server: {
+//     proxy: {
+//       '/api': {
+//         target: 'http://localhost:5000',
+//         changeOrigin: true,
+//         secure: false,
+//       },
+//     },
+//   },
+// });
+
+
+//============
+// naamjaap/vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-    base: '/naamjaap/',
+  base: './', // ✅ relative paths work in any deployment
   plugins: [react()],
   server: {
     proxy: {
