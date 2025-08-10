@@ -82,7 +82,13 @@
 
 //=====================================
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import './App.css';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import GuidePage from './pages/Guide';
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -131,6 +137,14 @@ function App() {
 
   return (
     <div className="app">
+       <Router>
+        <Navbar />
+        <Routes>
+        <Route path="/" element={<Home />} />
+            <Route path="/guide" element={<GuidePage />} />
+     
+      </Routes>
+      </Router>
       <header>
         <h1>Krishna Naam Japa Counter</h1>
       </header>

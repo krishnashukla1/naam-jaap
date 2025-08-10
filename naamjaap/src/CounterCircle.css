@@ -1,0 +1,43 @@
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Add this so sparkles position relative to circle */
+}
+
+
+.bg {
+  stroke: #ddd;
+}
+
+.progress {
+  transition: stroke-dashoffset 0.4s ease;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.count-text {
+  font-size: 24px;
+  fill: white;
+  font-weight: bold;
+}
+/* Add in CounterCircle.css */
+.sparkle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: yellow;
+  border-radius: 50%;
+  animation: sparkleAnim 0.6s ease-out forwards;
+}
+
+@keyframes sparkleAnim {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0) translateY(-30px);
+    opacity: 0;
+  }
+}
