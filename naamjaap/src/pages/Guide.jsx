@@ -1,6 +1,6 @@
 // src/pages/Guide.jsx
 import React from "react";
-import "../log.css";
+import "../Log.css";
 
 export default function Guide() {
   return (
