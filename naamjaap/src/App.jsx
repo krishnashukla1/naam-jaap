@@ -191,3 +191,14 @@ function App() {
 }
 
 export default App;
+
+/*
+PS D:\F27-TALKTO\naam-jaap> git add .
+PS D:\F27-TALKTO\naam-jaap> git commit -m 'test'
+[main f8ec026] test
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS D:\F27-TALKTO\naam-jaap> git push 
+Enumerating objects: 11, done.
+
+https://naam-jaap.onrender.com
+*/
