@@ -94,26 +94,31 @@
 
 
 /* ==== Base ==== */
-body, html {
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100vh;       /* 100% viewport height */
+  width: 100vw;        /* 100% viewport width */
+  overflow-x: hidden;  /* prevent horizontal scroll */
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(180deg, #002233, #00aaff);
   color: white;
-  height: 100%;
   text-align: center;
-  
-  /* Center all content */
+
+  /* Center content vertically and horizontally */
   display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center;     /* vertical center */
-  
-  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
 }
+
 
 
 .app {
   padding-top: 40px;
 }
+
+
+
 
 /* ==== Counter Circle ==== */
 .counter-circle {
@@ -314,5 +319,30 @@ body, html {
 
   nav.active a:hover {
     background: rgba(255,255,255,0.1);
+  }
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
   }
 }
