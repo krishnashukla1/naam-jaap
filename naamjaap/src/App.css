@@ -141,10 +141,10 @@ body, html {
   margin: 20px auto;
 }
 
-.count-button, .stop-button, .reset-button {
-  font-size: 20px;
-  padding: 15px 25px;
-  background: rgba(0, 128, 128, 0.8);
+.count-button {
+  font-size: 26px;          /* bigger font size */
+  padding: 20px 35px;       /* bigger padding */
+  background: rgba(0, 128, 128, 0.8); /* keep teal-ish */
   color: white;
   border: none;
   border-radius: 12px;
@@ -153,8 +153,41 @@ body, html {
   transition: all 0.3s ease;
 }
 
-.count-button:hover, .stop-button:hover, .reset-button:hover {
+.count-button:hover {
   background: rgba(0, 128, 128, 1);
+  transform: translateY(-2px);
+}
+
+.stop-button {
+  font-size: 20px;
+  padding: 15px 25px;
+  background: #e74c3c; /* red */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.stop-button:hover {
+  background: #c0392b; /* darker red */
+  transform: translateY(-2px);
+}
+.reset-button {
+  font-size: 20px;
+  padding: 15px 25px;
+  background: #3498db; /* blue */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.reset-button:hover {
+  background: #2980b9; /* darker blue */
   transform: translateY(-2px);
 }
 
